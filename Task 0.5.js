@@ -1,14 +1,13 @@
 
-function areaOfATriangle(height1,height2,base){
+function areaOfATriangle(number1,number2,number3){
 
-    if(height1>=height2){
-
-        return 0.5*base*height1;
-    }
-    else{
-
-        return 0.5*base*height2;
-    }
+    let semiPerimeter = (number1 + number2 + number3) / 2;
+    return Math.sqrt(
+        semiPerimeter *
+      (semiPerimeter - number1) *
+      (semiPerimeter - number2) *
+      (semiPerimeter - number3)
+  );
 }
 
-console.log("area: "+areaOfATriangle(2,3,5));
+console.log("area: "+areaOfATriangle(3,4,5));
