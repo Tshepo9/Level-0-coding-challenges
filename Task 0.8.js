@@ -2,23 +2,19 @@ function convertToTime(value){
 
      let hours = Math.round(value/60);
      let minutes = value%60;
+
+     let hourstr = "hour";
+     let minstr = "minute";
   
     //check for singular and pluras on hours
-    if(hours>1){
-        console.log(hours+" hours ")
-    }
-    else{
-        console.log(hours+" hour ")
-    }
+      if (hours>1){
+          hourstr +="s"
+      }
+      if (minutes>1){
+          minstr +="s"
+      }
 
-    //check for singular and pluras on minutes
-    if(minutes>1){
-        console.log(minutes+" minutes ")
-    }
-    else{
-        console.log(minutes+" minute ")
-    }
- 
+      console.log(hours+":"+hourstr+" "+minutes+":"+minstr);
 }
 
-convertToTime(133);
+convertToTime(71);
