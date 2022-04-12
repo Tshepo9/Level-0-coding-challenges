@@ -1,13 +1,11 @@
-
-function areaOfATriangle(number1,number2,number3){
-
-    let semiPerimeter = (number1 + number2 + number3) / 2;
-    return Math.sqrt(
-        semiPerimeter *
-      (semiPerimeter - number1) *
-      (semiPerimeter - number2) *
-      (semiPerimeter - number3)
+function areaOfATriangle(length1, length2, length3) {
+  let semiPerimeter = (length1 + length2 + length3) / 2;
+  return Math.sqrt(
+    semiPerimeter *
+      (semiPerimeter - length1) *
+      (semiPerimeter - length2) *
+      (semiPerimeter - length3)
   );
 }
 
-console.log("area: "+areaOfATriangle(3,4,5));
+console.log("area: " + areaOfATriangle(3, 4, 5));
