@@ -1,14 +1,14 @@
 function printVowels(word) {
-  let vowels = /[aeiou]/gi;
-  let letters = [];
-  let alphabet = word.split("");
+  const vowels = /[aeiou]/gi;
+  const letters = [];
+  const alphabet = word.toLowerCase().split("");
 
   for (let vowel of alphabet) {
-    if (vowel.match(vowels) && !letters.includes(vowel.toLowerCase())) {
-      letters.push(vowel.toLowerCase());
+    if (vowel.match(vowels) && !letters.includes(vowel)) {
+      letters.push(vowel);
     }
   }
   console.log("vowels: " + letters);
 }
 
-printVowels("umuzi");
+printVowels("umuziOO");

@@ -6,5 +6,5 @@ function convertToCelsius(temperature) {
   return (temperature - 32) * 0.5556;
 }
 
-console.log(convertToFahrenheit(-30) + " degrees Fahrenheit");
-console.log(convertToCelsius(-4) + " degrees Celsius");
+console.log(convertToFahrenheit(10) + " degrees Fahrenheit");
+console.log(convertToCelsius(50) + " degrees Celsius");
